@@ -15,6 +15,6 @@
      }
 
     angular
-        .module('cool-mess2', ['ui.router', 'firebase'])
+        .module('cool-mess2', ['ui.router', 'firebase', 'ui.bootstrap'])
         .config(config);
 })();

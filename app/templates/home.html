@@ -1,6 +1,10 @@
 <div class="rooms">
-  <h1 style="margin-left: 35px">Cool Messenger</h1>
+  <h2 style="margin-left: 35px; font-weight: bold; font-style: italic;">Cool Messenger
+    <button style="font-size: 20px; font-weight: 600;" class="add-room" ng-click="home.addRoom()">Add Room</button>
+  </h2>
   <div ng-repeat="room in home.rooms">
-    <h2 style="margin-left: 35px; color: #565656;">{{room.$value}}</h2>
+    <h4 style="margin-left: 35px; color: #565656;">{{room.$value}}
+      <button style="font-size: 12px; margin-left: 30px;" ng-click="home.deleteRoom(room)">Remove</button>
+    </h4>
   </div>
 </div>

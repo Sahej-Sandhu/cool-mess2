@@ -6,6 +6,14 @@
 
     Room.all = rooms;
 
+    Room.add = function(room){
+      rooms.$add(room);
+    }
+
+    Room.delete = function(room){
+      rooms.$remove(room);
+    }
+
     return Room;
   }
 
