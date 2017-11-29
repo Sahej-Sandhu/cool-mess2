@@ -1,9 +1,9 @@
 (function() {
-    function HomeCtrl() {
-      return;
+    function HomeCtrl(Room) {
+      this.rooms = Room.all;
     }
 
     angular
         .module('cool-mess2')
-        .controller('HomeCtrl', [HomeCtrl]);
+        .controller('HomeCtrl', ['Room', HomeCtrl]);
 })();

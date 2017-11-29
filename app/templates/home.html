@@ -1,1 +1,6 @@
-<h1>Home Page</h1>
+<div class="rooms">
+  <h1 style="margin-left: 35px">Cool Messenger</h1>
+  <div ng-repeat="room in home.rooms">
+    <h2 style="margin-left: 35px; color: #565656;">{{room.$value}}</h2>
+  </div>
+</div>
